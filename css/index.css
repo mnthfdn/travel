@@ -1,0 +1,211 @@
+
+
+:root {
+    --primary-color: #2F4EB4;
+    --secondary-color: #5D686E;
+    --dark-blue:#192289;
+    --white-color: #ffffff;
+    --text-color: #333;
+    --red:#D23B38;
+    --tas:#F8F8F8
+}
+body{
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+    background: var(--tas);
+}
+a{
+    color: unset;
+}
+.no-style-ul, .no-style-li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+  /* BACKGROUND COLOR*/
+.bg-dark-blue{
+    background-color:var(--primary-color);
+}
+.bg-red{
+    background-color:var(--red);
+}
+.bg-white{
+    background-color:var(--white-color);
+}
+/* TEXT COLOR*/
+.text-dark-blue{
+    color: var(--primary-color);
+}
+.text-white{
+    color: var(--white-color);
+}
+.text-gray{
+    color: var(--secondary-color);
+}
+.text-center{
+    text-align: center;
+}
+
+.alert--text{
+    margin: 10px;
+    color:var(--red);
+    text-align: center;
+    font-weight: 600;
+}
+
+.margin30{
+    margin-top:30px
+}
+.margin10{
+    margin-top:10px
+}
+.container{
+    margin:10px;
+    background-color: white;
+}
+.flex{
+    display: flex;
+}
+.content-between{
+    justify-content: space-between;
+}
+#header{
+    height: 50px;
+    display: block;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+}
+#journeySearchForm{
+    background-color: var(--tas)
+}
+#journeySearchForm select ,#journeySearchForm input{
+    height: 60px;
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 15px 5px 0 10px;
+    border:none;
+    font-size: 16px;
+    color: var(--secondary-color);
+}
+input#date{
+    width: 95%;
+
+}
+input:focus-visible {
+    outline: none;
+}
+#journeySearchForm label {
+    position: absolute;
+    padding:5px 0px 0 40px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.date-label{
+    padding: 5px 0px 0 10px!important;
+}
+
+.btn-primary{
+    border-style: unset;
+    padding: 15px 50px;
+    border-radius: 5px;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+
+}
+button:disabled {
+    background-color: rgba(239, 239, 239, 0.6)!important;
+    color:rgba(16, 16, 16, 0.3)!important;
+    border: 1px solid rgba(118, 118, 118, 0.6);
+}
+
+/* Search CSS*/
+
+
+.show{
+    border-radius: 5px;
+    border: 1px solid #aaa;
+
+}
+.fromCityList, .toCityList {
+    background-color: white;
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 90%;
+    left: 20px;
+    z-index: 9999;
+    border-top: none;
+}
+
+.no-style-ul {
+    display: none;
+    text-align: start;
+    overflow-y: scroll;
+}
+
+.show {
+    display: block;
+}
+li.no-style-li{
+    font-size: 0.9em;
+    padding: 0.4em;
+    color: var(--secondary-color);
+    height: 5px;
+    margin: 10px;
+}
+.active {
+    background: #6382e9;
+    color: white;
+}
+.information-text{
+    margin-top:20px;
+    padding: 5%;
+    font-size: 12px;
+    line-height: 14px;
+    background-color: #ffffff;
+    color: var(--secondary-color);
+}
+
+
+.material-symbols-outlined {
+    vertical-align: middle;
+}
+.tiny-date-container{
+    position: absolute;
+    right: 15%;
+    top: 10%;
+    gap: 10px;
+    flex-direction:column
+}
+.tiny-date{
+    border: 0.9px solid var(--secondary-color);
+    background: white;
+    color:var(--secondary-color);    
+    border-radius: 2px;
+    font-size: 12px;
+    padding: 5px;
+}
+.tiny-date-active{
+    background:var(--secondary-color);
+    color: white;
+}
+.date{position: relative;}
+.swap-icon{
+    position: absolute;
+    right: 10%;
+    top: 35%;
+    border: 1px solid #707070;
+    border-radius: 15px;
+    width: 30px;
+    height: 28px;
+    background: white;
+    padding: 1px;
+}
+.swap-icon .material-symbols-outlined {
+    color: var(--secondary-color);
+    height: 10.57pt;
+}
+.place{
+    position: relative;
+}
